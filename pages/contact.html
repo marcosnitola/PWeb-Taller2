@@ -15,22 +15,37 @@
 
 	<main>
 		<section>
-			<p>Saluton! En ĉi tiu paĝo vi povas sendi viajn datumojn por ricevi retpoŝto pri promocioj, novaj ŝanĝoj kaj novaĵoj. Ankaŭ vi povas sendi viajn demandojn pri niaj produktoj, plendoj kaj sugestoj.</p>
+			<p>Saluton! En ĉi tiu paĝo vi povas sendi viajn datumojn por kontakti nin por sendi viajn demandojn pri niaj produktoj, plendoj kaj sugestoj. Dankon!</p>
 		</section>
 		<section>
 			<h2>Formulara kontakto</h2>
-			<form action="." method="post">
+			<form action="index.html" method="post">
 				<label for="nameusr">
-					nomo
+					Nomo: <br>
 					<input type="text" name="nameUser" id="nameusr">
 				</label>
+				<label for="lastnameusr">
+					Famili-nomo: <br>
+				</label>
 				<label for="email">
-					poŝt-adreso:
+					poŝt-adreso: <br>
 					<input type="email" name="emailusr" id="email">
 				</label>
+				<label>
+					Identiga kardo (Kolombio): <br>
+					<select name="di" id="di">
+						<option value="cc" title="Civitaneca kardo">CC</option>
+						<option value="ce" title="Fremda Kardo">CE</option>
+						<option value="ti" title="Identiga kardo">TI</option>
+						<option value="rc" title="Civila registro">RC</option>
+						<option value="pp" title="Pasporto">Pp</option>
+					</select>
+					<input type="number" name="numdi">
+				</label>
+				<br>
 				<label for="terms">
 					<input type="checkbox" name="terms" id="terms">
-					Mi akceptas terminoj kaj kondiĉoj
+					Mi akceptas terminoj kaj kondiĉoj <br>
 				</label>
 				<button type="submit">Sendi</button>
 			</form>
